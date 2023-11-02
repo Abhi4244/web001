@@ -37,12 +37,13 @@ html, body {
 }
 
 .nav div.logo a:hover {
-  color: #00E676;
+  color: #101b16;
 }
 
 .nav div.main_list {
   height: 55px;
   float: right;
+  /*transition: display 4s ease-in-out;*/
 }
 
 .nav div.main_list ul {
@@ -134,23 +135,24 @@ html, body {
   .nav div.logo {
     margin-left: 15px;
     font-size: 4.5rem;
-    margin-top: -2.9rem;
   }
 }
 
 @media screen and (max-width:768px) {
   .nav div.main_list {
     width: 70%;
-    height: 0;
+    height: 0px;
     overflow: hidden;
+    transition: height 1s ease-in-out,opacity 4s ease;
+    border-radius: 10px 0px 10px 10px;
   }
 }
 
 @media screen and (max-width:768px) {
   .nav div.show_list {
-    height: auto;
-    display: none;
-    margin-right: 4px;
+    height: 260px;
+    display: block;
+    margin-top: 0.41em;
   }
 }
 
@@ -159,11 +161,10 @@ html, body {
     flex-direction: column;
     width: auto;
     height: auto;
-    margin-top: 5.6em;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0, 0.7);
+    background-color: rgba(0,0,0, 0.9);
     background-position: center top;
   }
 }
@@ -319,7 +320,10 @@ html, body {
 
 .affix {
   padding: 0;
-  background-color: #111;
+  opacity: 0.8;
+  background-size: 900% 400%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: backy 8s ease infinite;
 }
 
 .content {
@@ -344,6 +348,18 @@ html, body {
 @media all and (max-width:700px) {
   .myP {
     padding: 2%;
+  }
+}
+
+@keyframes backy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
