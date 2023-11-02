@@ -27,6 +27,7 @@ html, body {
   width: auto;
   height: auto;
   padding-left: 3rem;
+  /*margin-top: -2.9rem;*/
 }
 
 .nav div.logo a {
@@ -132,6 +133,8 @@ html, body {
 @media screen and (max-width:768px) {
   .nav div.logo {
     margin-left: 15px;
+    font-size: 4.5rem;
+    margin-top: -2.9rem;
   }
 }
 
