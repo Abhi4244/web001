@@ -369,6 +369,8 @@ html, body {
   color: white;
   padding-bottom: 15px;
   padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .myH2 {
