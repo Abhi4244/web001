@@ -159,11 +159,6 @@ input {
   margin-top: 0.6rem;
 }
 
-.sub2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .sub2 .desc {
   font-size: 1.4rem;
   text-align: justify;

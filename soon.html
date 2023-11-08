@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Navbar-Scroll-Fade-Color-Change.css">
-    <link rel="stylesheet" href="assets/css/courses.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/soon.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -39,100 +39,18 @@
     </nav>
 
  <section class="home">
-<p class="line-1 anim-typewriter" >Courses</p>  
+<p class="line-1 anim-typewriter text-info">Coming soon</p> 
+    <div style="z-index:10;font-size:20px;position:absolute;bottom:20px;left:10px"><p class="text-warning" style="font-weight:bolder;font-size:2.8rem"> Work in progress, till then why don't you read some articles?</p>  <a href="articles.html" class="btn text-warning bg-dark" style="z-index:10;">Read here</a></div>
   </section>
   <section class="spacer">
 
     </section>
-<div class="content">
 
-    <section class="popular" id="popular">
-<center>  <h1 class="heading "> Courses on Yuva Tourism</h1></center>
-  <center><form ><input type="search" placeholder="search" id="searchBar" /></form></center>
-
-    <div class="box-container">
-
-      <div class="box courseWrapper">
-        <span class="price"> $0 </span>
-        <img src="assets/img/c1.jpg">
-        <h3>Forest Adventure</h3>
-
-        <a href="soon.html" class="btn text-warning">Start now</a>
-      </div>
-      <div class="box courseWrapper">
-        <span class="price"> $5  </span>
-        <img src="assets/img/c2.jpg">
-        <h3>Temples of Thailand</h3>
-
-        <a href="soon.html" class="btn text-warning">Buy now</a>
-      </div>
-
-
-      <div class="box courseWrapper">
-        <span class="price"> $0</span>
-        <img src="assets/img/c3.jpg" >
-        <h3>Train travelling etiquettes</h3>
-
-        <a href="soon.html" class="btn text-warning">Start now</a>
-      </div>
-      <div class="box courseWrapper">
-        <span class="price"> $5 </span>
-        <img src="assets/img/c4.jpg" >
-        <h3>Hiking Himalayas</h3>
-
-        <a href="#" class="btn text-warning">Buy now</a>
-      </div>
-      <div class="box courseWrapper">
-        <span class="price"> $15 </span>
-        <img src="assets/img/c5.jpg" >
-        <h3>Air travel etiquettes</h3>
-
-        <a href="soon.html" class="btn text-warning">Buy now</a>
-      </div>
-      <div class="box courseWrapper">
-        <span class="price"> $25</span>
-        <img src="assets/img/c6.jpg" >
-        <h3>Traversing the Andes</h3>
-
-        <a href="soon.html" class="btn  text-warning">Buy now</a>
-      </div>
-    </div>
-
-
-
-
-
-  </section>
-</div>
-
-
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            const getSearchBar =
-                document.querySelector('#searchBar');
-            const getAllCourses =
-                document.querySelectorAll('.courseWrapper');
-
-            getSearchBar.addEventListener('keyup', e => {
-                getAllCourses.forEach(course => {
-                    if (course.innerText.toLowerCase().includes(
-                        e.target.value.toLowerCase())) {
-                        course.style.display = 'block';
-                        return course;
-                    }
-                    else {
-                        course.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
     <footer class="bg-dark footer-basic">
         <div class="social"><a class="border-info" href="#"><i class="icon ion-social-github bg-dark border-light"></i></a><a class="link-info border-info" href="#"><i class="icon ion-social-instagram"></i></a><a class="border-info" href="#"><i class="icon ion-social-twitter"></i></a><a class="border-info" href="#"><i class="icon ion-social-facebook bg-dark"></i></a></div>
         <ul class="list-inline">
             <li class="list-inline-item text-info"><a href="index.html">Home</a></li>
-            <li class="list-inline-item text-info"><a href="#">About</a></li>
+            <li class="list-inline-item text-info"><a href="about.html">About</a></li>
             <li class="list-inline-item text-info"><a href="explore.html">Explore</a></li>
             <li class="list-inline-item text-info"><a href="initiatives.html">Initiatives</a></li>
             <li class="list-inline-item text-info"><a href="gallery.html">Gallery</a></li>
