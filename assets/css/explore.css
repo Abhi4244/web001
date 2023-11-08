@@ -39,7 +39,7 @@
     width: 0;
   }
   to {
-    width: 6em;
+    width: 4em;
   }
 }
 
@@ -114,6 +114,7 @@
 }
 
 .article_tab {
+  margin: 15px 20px 20px 20px;
 }
 
 .article {
@@ -121,8 +122,8 @@
   flex-direction: column;
   padding: 5px;
   background: rgba(33, 5, 29, 0.8);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   width: 450px;
   border-radius: 1.5rem;
   text-align: center;
