@@ -46,51 +46,52 @@
     </section>
 <div class="content">
 <h1 class="heading"> Courses on Yuva Tourism</h1>
+<form ><input type="search" placeholder="search" id="searchBar" /></form>
     <section class="popular" id="popular">
 
 
     <div class="box-container">
 
-      <div class="box">
+      <div class="box courseWrapper">
         <span class="price"> $0 </span>
-        <img src="https://i.postimg.cc/7LrzkL46/p-1.jpg">
+        <img src="assets/img/c1.jpg">
         <h3>Forest Adventure</h3>
 
         <a href="#" class="btn text-warning">Start now</a>
       </div>
-      <div class="box">
+      <div class="box courseWrapper">
         <span class="price"> $5  </span>
-        <img src="https://i.postimg.cc/xdGzTSjP/p-2.jpg">
+        <img src="assets/img/c2.jpg">
         <h3>Temples of Thailand</h3>
 
         <a href="#" class="btn text-warning">Buy now</a>
       </div>
 
 
-      <div class="box">
+      <div class="box courseWrapper">
         <span class="price"> $0</span>
-        <img src="https://i.postimg.cc/xC0bXFcV/p-3.jpg" >
+        <img src="assets/img/c3.jpg" >
         <h3>Train travelling etiquettes</h3>
 
         <a href="#" class="btn text-warning">Start now</a>
       </div>
-      <div class="box">
+      <div class="box courseWrapper">
         <span class="price"> $5 </span>
-        <img src="https://i.postimg.cc/Px2vYzwp/p-4.jpg" >
+        <img src="assets/img/c4.jpg" >
         <h3>Hiking Himalayas</h3>
 
         <a href="#" class="btn text-warning">Buy now</a>
       </div>
-      <div class="box">
+      <div class="box courseWrapper">
         <span class="price"> $15 </span>
-        <img src="https://i.postimg.cc/0jjMfMYt/p-5.jpg" >
+        <img src="assets/img/c5.jpg" >
         <h3>Air travel etiquettes</h3>
 
         <a href="#" class="btn text-warning">Buy now</a>
       </div>
-      <div class="box">
+      <div class="box courseWrapper">
         <span class="price"> $25</span>
-        <img src="https://i.postimg.cc/sD8STc05/p-6.jpg" >
+        <img src="assets/img/c6.jpg" >
         <h3>Traversing the Andes</h3>
 
         <a href="food-order.html" class="btn  text-warning">Buy now</a>
@@ -103,6 +104,30 @@
 
   </section>
 </div>
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const getSearchBar =
+                document.querySelector('#searchBar');
+            const getAllCourses =
+                document.querySelectorAll('.courseWrapper');
+
+            getSearchBar.addEventListener('keyup', e => {
+                getAllCourses.forEach(course => {
+                    if (course.innerText.toLowerCase().includes(
+                        e.target.value.toLowerCase())) {
+                        course.style.display = 'block';
+                        return course;
+                    }
+                    else {
+                        course.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
     <footer class="bg-dark footer-basic">
         <div class="social"><a class="border-info" href="#"><i class="icon ion-social-github bg-dark border-light"></i></a><a class="link-info border-info" href="#"><i class="icon ion-social-instagram"></i></a><a class="border-info" href="#"><i class="icon ion-social-twitter"></i></a><a class="border-info" href="#"><i class="icon ion-social-facebook bg-dark"></i></a></div>
         <ul class="list-inline">
