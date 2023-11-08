@@ -31,7 +31,7 @@
 }
 
 .anim-typewriter {
-  animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+  animation: typewriter 2s steps(12) 1s 1 normal both, blinkTextCursor 500ms steps(12) infinite normal;
 }
 
 @keyframes typewriter {
@@ -39,7 +39,7 @@
     width: 0;
   }
   to {
-    width: 4em;
+    width: 3.7em;
   }
 }
 
@@ -73,5 +73,112 @@ p {
 
 a {
   text-decoration: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+  display: block;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search] {
+  padding: 9px 10px 9px 32px;
+  width: 59px;
+  background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  font-size: 1.9rem;
+  display: block;
+  font-family: cursive;
+  color: #fff;
+}
+
+input[type=search]:focus {
+  width: 130px;
+  border-color: #66CC75;
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+  font-size: 1.8rem;
+  display: block;
+}
+
+form {
+  margin: 50px;
+}
+
+input {
+  outline: none;
+}
+
+.article_tab {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background: rgba(33, 5, 29, 0.8);
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 450px;
+  border-radius: 1.5rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.sub1 {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  column-gap: 3.9rem;
+  font-family: monospace;
+}
+
+.sub1 h2 {
+  margin-top: 0.6rem;
+}
+
+.sub1 i {
+  margin-top: 0.6rem;
+}
+
+.sub2 .desc {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin: 5px 3px 5px 3px;
+  color: #3e2e42;
+  font-weight: bolder;
+}
+
+.sub2 .btn {
+  color: #b607eb;
+  border: 1px solid #b607eb;
+}
+
+.sub2 .btn:hover {
+  color: #b607eb;
+  border: 1px solid #b607eb;
+  background: rgba(182, 7, 235, 0.1);
+}
+
+.article_tab .heading {
+  display: block;
+  text-align: center;
 }
 

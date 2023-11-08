@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/article.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Navbar-Scroll-Fade-Color-Change.css">
-    <link rel="stylesheet" href="assets/css/explore.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -40,45 +40,22 @@
     </nav>
 
  <section class="home">
-<p class="line-1 anim-typewriter" >Explore</p>  
+<p class="line-1 anim-typewriter" >Articles</p>  
   </section>
   <section class="spacer">
 
     </section>
-<div style="height: auto" class="content">
-	<section class="popular" id="popular">
 
-    <h1 class="heading" style="margin-left:15px;"> Popular courses on Yuva Tourism at XploreYouth </h1>
+    <div class="content">
 
-    <div class="box-container">
+<center><form ><input type="search" placeholder="search" id="searchBar"/></form></center>
 
-      <div class="box">
-        <span class="price">$0 (free starter course) </span>
-        <img src="assets/img/c1.jpg" >
-        <h3>Forest adventure</h3>
+</div>
+<div class="content">
+<section class="article_tab">
+   
 
-        <a href="courses.html" class="btn text-warning">See more</a>
-      </div>
-      <div class="box">
-        <span class="price">$5 </span>
-        <img src="assets/img/c2.jpg" >
-        <h3>Temples of Thailand</h3>
-
-        <a href="courses.html" class="btn text-warning">See more</a>
-      </div>
-
-    </div>
-
-    <div class="load-more ml-5">
-      <a href="courses.html" class="btn text-info">Load More</a>
-
-    </div>
-  </section>
-
-
-
-  <section class="article_tab">
-     <center> <i class="fas fa-newspaper fa-4x mt-5" style="color: peachpuff;"><h1 class="mb-2 mt-1">Articles</h1></i> </center>
+    
     <div class="article">
       <div class="sub1" style="margin-bottom: 5px;">
        <h2 class="header text-success" style="font-weight: bolder;">Getting to know Yuva Tourism</h2>
@@ -120,14 +97,96 @@
         <a href="article3.html" class="btn">Read more</a>
       </div>
     </div>
-<div class="load-more ml-5">
-      <a href="articles.html" class="btn text-danger">Load More</a>
+
+    <div class="article">
+      <div class="sub1" style="margin-bottom: 5px;">
+       <h2 class="header text-success" style="font-weight: bolder;">The Best of Oslo in One Day </h2>
+       <i class="fas fa-bolt fa-2x text-info"> <b class="text-info">2min</b></i>
+       
+      </div>
+      <div class="sub2">
+        <p class="desc">
+       Oslo Opera House was opened in 2008 and is known for its unique design which allows visits to walk on top of it. The building’s landmark design and architecture give the impression that a white granite glacier is sliding into...
+        </p>
+        <a href="article1.html" class="btn">Read more</a>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="sub1" style="margin-bottom: 5px;">
+       <h2 class="header text-success" style="font-weight: bolder;">Getting to know Yuva Tourism</h2>
+       <i class="fas fa-bolt fa-2x text-info"> <b class="text-info">2min</b></i>
+       
+      </div>
+      <div class="sub2">
+        <p class="desc">
+       Constitution of 'YUVA Tourism Clubs' is essential for the growth of tourism in India and states should work on a war footing in this direction, Union Tourism Minister G Kishan Reddy said...
+        </p>
+        <a href="article1.html" class="btn">Read more</a>
+      </div>
+    </div>
+
+
+    <div class="article">
+      <div class="sub1" style="margin-bottom: 5px;">
+       <h2 class="header text-success" style="font-weight: bolder;">Getting to know Yuva Tourism</h2>
+       <i class="fas fa-bolt fa-2x text-info"> <b class="text-info">2min</b></i>
+       
+      </div>
+      <div class="sub2">
+        <p class="desc">
+       Constitution of 'YUVA Tourism Clubs' is essential for the growth of tourism in India and states should work on a war footing in this direction, Union Tourism Minister G Kishan Reddy said...
+        </p>
+        <a href="article1.html" class="btn">Read more</a>
+      </div>
+    </div>
+
+
+    <div class="article">
+      <div class="sub1" style="margin-bottom: 5px;">
+       <h2 class="header text-success" style="font-weight: bolder;">Getting to know Yuva Tourism</h2>
+       <i class="fas fa-bolt fa-2x text-info"> <b class="text-info">2min</b></i>
+       
+      </div>
+      <div class="sub2">
+        <p class="desc">
+       Constitution of 'YUVA Tourism Clubs' is essential for the growth of tourism in India and states should work on a war footing in this direction, Union Tourism Minister G Kishan Reddy said...
+        </p>
+        <a href="article1.html" class="btn">Read more</a>
+      </div>
+    </div>
+
 
   </section>
 
 </div>
 
 
+
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const getSearchBar =
+                document.querySelector('#searchBar');
+            const getAllArticles =
+                document.querySelectorAll('.article');
+
+            getSearchBar.addEventListener('keyup', e => {
+                getAllArticles.forEach(article => {
+                    if (article.innerText.toLowerCase().includes(
+                        e.target.value.toLowerCase())) {
+                        article.style.display = 'block';
+                        return article;
+                    }
+                    else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
     <footer class="bg-dark footer-basic">
         <div class="social"><a class="border-info" href="#"><i class="icon ion-social-github bg-dark border-light"></i></a><a class="link-info border-info" href="#"><i class="icon ion-social-instagram"></i></a><a class="border-info" href="#"><i class="icon ion-social-twitter"></i></a><a class="border-info" href="#"><i class="icon ion-social-facebook bg-dark"></i></a></div>
         <ul class="list-inline">
