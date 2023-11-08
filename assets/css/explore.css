@@ -124,11 +124,12 @@
   background: rgba(33, 5, 29, 0.8);
   margin-left: 20px;
   margin-right: 20px;
-  width: 450px;
+  width: auto;
   border-radius: 1.5rem;
   text-align: center;
   position: relative;
   margin-bottom: 12px;
+  max-width: 450px;
 }
 
 .sub1 {
