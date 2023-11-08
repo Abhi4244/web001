@@ -114,33 +114,29 @@
 }
 
 .article_tab {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
-  align-content: center;
+  margin: 15px;
 }
 
 .article {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  background: rgba(33, 5, 29, 0.99);
-  width: 440px;
+  background: rgba(33, 5, 29, 0.8);
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 450px;
   border-radius: 1.5rem;
   text-align: center;
   position: relative;
   margin-bottom: 12px;
-  flex-wrap: wrap;
 }
 
 .sub1 {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  column-gap: 2rem;
+  column-gap: 3.9rem;
   font-family: monospace;
-  flex-wrap: wrap;
 }
 
 .sub1 h2 {
