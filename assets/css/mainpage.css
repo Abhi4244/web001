@@ -13,6 +13,55 @@
   justify-content: center;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 35px 10px 20px 15px;
+}
+
+.about .image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  scale: 0.9;
+}
+
+.about .image img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.about .contents {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+}
+
+.about .contents span {
+  font-size: 2.5rem;
+}
+
+.about .contents h3 {
+  font-size: 3rem;
+  padding-top: 0.5rem;
+}
+
+.about .contents p {
+  color: #666;
+  font-size: 1.4rem;
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: justify;
+  margin-right: 25px;
+}
+
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -71,10 +120,6 @@
     margin-right: 15px;
   }
 }
-
-/* Service Section Ends */
-
-/* Hotes Section Starts */
 
 .hotel .box-container {
   display: flex;
@@ -147,8 +192,6 @@
   text-align: center;
   margin-top: 1rem;
 }
-
-/* Hotes Section Ends */
 
 /* Gallery Section Starts Here */
 

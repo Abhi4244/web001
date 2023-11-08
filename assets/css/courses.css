@@ -126,8 +126,8 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button {
 
 input[type=search] {
   padding: 9px 10px 9px 32px;
-  width: 55px;
-  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  width: 59px;
+  background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   border: solid 1px #ccc;
   -webkit-border-radius: 10em;
   -moz-border-radius: 10em;
@@ -135,8 +135,9 @@ input[type=search] {
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s;
-  font-size: 1rem;
+  font-size: 1.9rem;
   display: block;
+  font-family: cursive;
 }
 
 input[type=search]:focus {
