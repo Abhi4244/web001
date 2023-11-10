@@ -116,7 +116,7 @@
 }
 
 .img-box:hover .transparent-box {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-box:hover .caption {
@@ -128,11 +128,13 @@
   cursor: pointer;
 }
 
-.caption > p:nth-child(2) {
-  font-size: 0.8em;
+.caption > p:nth-child(1) {
+  font-size: 2.8rem;
+  color: peachpuff;
+  font-weight: bold;
 }
 
 .opacity-low {
-  opacity: 0.5;
+  font-size: 1.2rem;
 }
 
